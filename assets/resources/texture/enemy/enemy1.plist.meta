@@ -1,0 +1,154 @@
+{
+  "ver": "1.0.6",
+  "importer": "sprite-atlas",
+  "imported": true,
+  "uuid": "27b59dd0-d603-4234-898f-6199947ad643",
+  "files": [
+    ".json",
+    ".plist"
+  ],
+  "subMetas": {
+    "618ea": {
+      "importer": "sprite-frame",
+      "uuid": "27b59dd0-d603-4234-898f-6199947ad643@618ea",
+      "displayName": "",
+      "id": "618ea",
+      "name": "0000 - Orc Warrior - Idle 1",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": 0,
+        "trimX": 1,
+        "trimY": 1,
+        "width": 32,
+        "height": 32,
+        "rawWidth": 32,
+        "rawHeight": 32,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "93714dd1-5fff-41ba-9e91-d489a96f2750@6c48a",
+        "atlasUuid": "27b59dd0-d603-4234-898f-6199947ad643"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "05dbe": {
+      "importer": "sprite-frame",
+      "uuid": "27b59dd0-d603-4234-898f-6199947ad643@05dbe",
+      "displayName": "",
+      "id": "05dbe",
+      "name": "0001 - Orc Warrior - Idle 2",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": 0,
+        "trimX": 35,
+        "trimY": 1,
+        "width": 32,
+        "height": 32,
+        "rawWidth": 32,
+        "rawHeight": 32,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "93714dd1-5fff-41ba-9e91-d489a96f2750@6c48a",
+        "atlasUuid": "27b59dd0-d603-4234-898f-6199947ad643"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "24c25": {
+      "importer": "sprite-frame",
+      "uuid": "27b59dd0-d603-4234-898f-6199947ad643@24c25",
+      "displayName": "",
+      "id": "24c25",
+      "name": "0002 - Orc Warrior - Idle 3",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": 0,
+        "trimX": 69,
+        "trimY": 1,
+        "width": 32,
+        "height": 32,
+        "rawWidth": 32,
+        "rawHeight": 32,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "93714dd1-5fff-41ba-9e91-d489a96f2750@6c48a",
+        "atlasUuid": "27b59dd0-d603-4234-898f-6199947ad643"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "3276a": {
+      "importer": "sprite-frame",
+      "uuid": "27b59dd0-d603-4234-898f-6199947ad643@3276a",
+      "displayName": "",
+      "id": "3276a",
+      "name": "0003 - Orc Warrior - Idle 4",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": 0,
+        "trimX": 103,
+        "trimY": 1,
+        "width": 32,
+        "height": 32,
+        "rawWidth": 32,
+        "rawHeight": 32,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "93714dd1-5fff-41ba-9e91-d489a96f2750@6c48a",
+        "atlasUuid": "27b59dd0-d603-4234-898f-6199947ad643"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "atlasTextureName": "enemy1.png",
+    "format": 3,
+    "uuid": "27b59dd0-d603-4234-898f-6199947ad643",
+    "textureUuid": "93714dd1-5fff-41ba-9e91-d489a96f2750@6c48a"
+  }
+}
