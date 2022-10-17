@@ -7,8 +7,9 @@ import {
   UITransform,
   Vec3,
   Animation,
+  Enum,
 } from "cc";
-import { createUINode } from "../App/Util";
+import { createUINode, sleep } from "../App/Util";
 import { T_ENTITY } from "../Reference/Config";
 import { ENUM_RESOURCE_EXTRA } from "../Reference/Enum";
 import { ResourceBus } from "../Runtime/ResourceBus";
@@ -53,7 +54,6 @@ export class Entity extends Component {
     const config = this.entityConfig.shadow
       ? this.entityConfig.shadow
       : this.shadowInit;
-    console.log(config);
     this.shadowNode = createUINode();
     this.node.addChild(this.shadowNode);
     this.shadowNode.setPosition(config.position);

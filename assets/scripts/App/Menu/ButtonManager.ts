@@ -21,6 +21,7 @@ import {
 } from "../../Reference/Enum";
 import { createUINode } from "../Util";
 import { EventBus } from "../../Runtime/EventManager";
+import { NodeClass } from "../../Base/NodeClass";
 const { ccclass, property } = _decorator;
 
 const STYLE = {
@@ -34,23 +35,22 @@ interface IProps {
   on: boolean;
 }
 
-export class ButtonManager extends Component {
-  node: Node = null;
+export class ButtonManager extends NodeClass {
   props: IProps = null;
   constructor(props: IProps) {
     super();
     this.props = props;
-    this.generate();
+    this.create();
   }
 
-  private generate() {
-    this.node = createUINode();
+  private create() {
     let ui = this.node.getComponent(UITransform);
     ui.setContentSize(STYLE.WIDTH, STYLE.HEIGHT);
 
     const spriteNode = createUINode();
     spriteNode.on(Input.EventType.TOUCH_START, () => {
       EventBus.instance.emit(ENUM_EVENT.CHANGEMENU, this.props.id);
+      EventBus.instance.emit(ENUM_EVENT.TRIGGLGWORLDMAP);
     });
     const sprite = spriteNode.addComponent(Sprite);
     sprite.sizeMode = Sprite.SizeMode.CUSTOM;

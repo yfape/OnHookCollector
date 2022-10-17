@@ -5,6 +5,7 @@ import {
   Component,
   Node,
   Quat,
+  Size,
   Sprite,
   SpriteFrame,
   Vec3,
@@ -16,6 +17,7 @@ import {
   T_ENTITY,
 } from "../../Reference/Config";
 import {
+  ENUM_ENEMY_STATE,
   ENUM_ENTITY,
   ENUM_EVENT,
   ENUM_PLAYER_STATE,
@@ -26,9 +28,11 @@ import { ResourceBus } from "../../Runtime/ResourceBus";
 
 export class EnemyManager extends Entity {
   entity: T_ENTITY;
+  position: Vec3;
 
   constructor(entity: ENUM_ENTITY, position?: Vec3) {
     super(CONFIG_ENTITY.get(entity), position);
+    this.position = position;
     this.tokeRotation();
     this.entity = CONFIG_ENTITY.get(entity);
     this.loadClips();
@@ -52,8 +56,55 @@ export class EnemyManager extends Entity {
     clip.wrapMode = AnimationClip.WrapMode.Loop;
     clip.addTrack(track);
     this.animationComponent.defaultClip = clip;
+    this.loadAttackClip();
     this.animationComponent.playOnLoad = true;
   }
 
-  attack() {}
+  protected loadAttackClip() {
+    let startX = this.position.x;
+    const track = new animation.VectorTrack();
+    track.componentsCount = 3;
+    track.path = new animation.TrackPath().toProperty("position");
+    const [x, y, z] = track.channels();
+    const xs: Array<[number, any]> = [
+      [0.1, { value: startX }],
+      [0.2, { value: startX - 30 }],
+      [0.3, { value: startX }],
+    ];
+    x.curve.assignSorted(xs);
+    const clip = new AnimationClip();
+    clip.name = ENUM_ENEMY_STATE.ATTACK;
+    clip.duration = 0.3;
+    clip.wrapMode = AnimationClip.WrapMode.Normal;
+    clip.addTrack(track);
+    this.animationComponent.clips.push(clip);
+  }
+
+  protected loadBeAttackClip() {
+    let startX = this.position.x;
+    const track = new animation.VectorTrack();
+    track.componentsCount = 3;
+    track.path = new animation.TrackPath().toProperty("position");
+    const [x, y, z] = track.channels();
+    const xs: Array<[number, any]> = [
+      [0.1, { value: startX }],
+      [0.2, { value: startX + 30 }],
+      [0.3, { value: startX }],
+    ];
+    x.curve.assignSorted(xs);
+    const clip = new AnimationClip();
+    clip.name = ENUM_ENEMY_STATE.BEATTACKED;
+    clip.duration = 0.3;
+    clip.wrapMode = AnimationClip.WrapMode.Normal;
+    clip.addTrack(track);
+    this.animationComponent.clips.push(clip);
+  }
+
+  attack() {
+    this.animationComponent.play(ENUM_ENEMY_STATE.ATTACK);
+  }
+
+  beAttacked() {
+    this.animationComponent.play(ENUM_ENEMY_STATE.BEATTACKED);
+  }
 }

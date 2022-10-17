@@ -1,0 +1,154 @@
+{
+  "ver": "1.0.6",
+  "importer": "sprite-atlas",
+  "imported": true,
+  "uuid": "6edd967c-d770-4227-adee-e28de49e2b91",
+  "files": [
+    ".json",
+    ".plist"
+  ],
+  "subMetas": {
+    "54b66": {
+      "importer": "sprite-frame",
+      "uuid": "6edd967c-d770-4227-adee-e28de49e2b91@54b66",
+      "displayName": "",
+      "id": "54b66",
+      "name": "0020 - Orc Shaman - Idle 1",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": 0,
+        "trimX": 1,
+        "trimY": 1,
+        "width": 32,
+        "height": 32,
+        "rawWidth": 32,
+        "rawHeight": 32,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "99ed5a61-fc73-4b9e-936e-3d6c095f8ff4@6c48a",
+        "atlasUuid": "6edd967c-d770-4227-adee-e28de49e2b91"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "7f05b": {
+      "importer": "sprite-frame",
+      "uuid": "6edd967c-d770-4227-adee-e28de49e2b91@7f05b",
+      "displayName": "",
+      "id": "7f05b",
+      "name": "0021 - Orc Shaman - Idle 2",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": 0,
+        "trimX": 35,
+        "trimY": 1,
+        "width": 32,
+        "height": 32,
+        "rawWidth": 32,
+        "rawHeight": 32,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "99ed5a61-fc73-4b9e-936e-3d6c095f8ff4@6c48a",
+        "atlasUuid": "6edd967c-d770-4227-adee-e28de49e2b91"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "34feb": {
+      "importer": "sprite-frame",
+      "uuid": "6edd967c-d770-4227-adee-e28de49e2b91@34feb",
+      "displayName": "",
+      "id": "34feb",
+      "name": "0022 - Orc Shaman - Idle 3",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": 0,
+        "trimX": 69,
+        "trimY": 1,
+        "width": 32,
+        "height": 32,
+        "rawWidth": 32,
+        "rawHeight": 32,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "99ed5a61-fc73-4b9e-936e-3d6c095f8ff4@6c48a",
+        "atlasUuid": "6edd967c-d770-4227-adee-e28de49e2b91"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "7c5fc": {
+      "importer": "sprite-frame",
+      "uuid": "6edd967c-d770-4227-adee-e28de49e2b91@7c5fc",
+      "displayName": "",
+      "id": "7c5fc",
+      "name": "0023 - Orc Shaman - Idle 4",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": 0,
+        "trimX": 35,
+        "trimY": 1,
+        "width": 32,
+        "height": 32,
+        "rawWidth": 32,
+        "rawHeight": 32,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "99ed5a61-fc73-4b9e-936e-3d6c095f8ff4@6c48a",
+        "atlasUuid": "6edd967c-d770-4227-adee-e28de49e2b91"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "atlasTextureName": "enemy3.png",
+    "format": 3,
+    "uuid": "6edd967c-d770-4227-adee-e28de49e2b91",
+    "textureUuid": "99ed5a61-fc73-4b9e-936e-3d6c095f8ff4@6c48a"
+  }
+}

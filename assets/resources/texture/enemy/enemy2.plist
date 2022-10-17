@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>0010 - Tauren Paladin - Idle 1.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{32,32}</string>
+                <key>spriteSourceSize</key>
+                <string>{32,32}</string>
+                <key>textureRect</key>
+                <string>{{1,1},{32,32}}</string>
+                <key>textureRotated</key>
+                <false/>
+            </dict>
+            <key>0011 - Tauren Paladin - Idle 2.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{32,32}</string>
+                <key>spriteSourceSize</key>
+                <string>{32,32}</string>
+                <key>textureRect</key>
+                <string>{{35,1},{32,32}}</string>
+                <key>textureRotated</key>
+                <false/>
+            </dict>
+            <key>0012 - Tauren Paladin - Idle 3.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{32,32}</string>
+                <key>spriteSourceSize</key>
+                <string>{32,32}</string>
+                <key>textureRect</key>
+                <string>{{69,1},{32,32}}</string>
+                <key>textureRotated</key>
+                <false/>
+            </dict>
+            <key>0013 - Tauren Paladin - Idle 4.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{32,32}</string>
+                <key>spriteSourceSize</key>
+                <string>{32,32}</string>
+                <key>textureRect</key>
+                <string>{{103,1},{32,32}}</string>
+                <key>textureRotated</key>
+                <false/>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>3</integer>
+            <key>pixelFormat</key>
+            <string>RGBA8888</string>
+            <key>premultiplyAlpha</key>
+            <false/>
+            <key>realTextureFileName</key>
+            <string>enemy2.png</string>
+            <key>size</key>
+            <string>{136,34}</string>
+            <key>smartupdate</key>
+            <string>$TexturePacker:SmartUpdate:1f75848275a48fa0aabecaf2a442c76b:98cf64ca3989fd7527de192e76ea9596:4df5ca112d6b3a155af448ebcb3be14c$</string>
+            <key>textureFileName</key>
+            <string>enemy2.png</string>
+        </dict>
+    </dict>
+</plist>

@@ -1,4 +1,5 @@
 import { Component, Layout, Node, UITransform, Widget } from "cc";
+import { NodeClass } from "../../Base/NodeClass";
 import { CONFIG_MENU_BUTTON } from "../../Reference/Config";
 import { ENUM_BUTTON, ENUM_EVENT } from "../../Reference/Enum";
 import { EventBus } from "../../Runtime/EventManager";
@@ -10,8 +11,7 @@ export const MENU_CONFIG = {
   CONTAINER_PADDING: 8.3,
 };
 
-export class MenuManager extends Component {
-  node: Node = null;
+export class MenuManager extends NodeClass {
   private buttons: Array<ButtonManager> = [];
   private _active: number = ENUM_BUTTON.CHARATOR;
   get active() {
@@ -39,7 +39,6 @@ export class MenuManager extends Component {
 
   //创建节点
   protected create() {
-    this.node = createUINode();
     const ui = this.node.getComponent(UITransform);
     ui.height = MENU_CONFIG.CONTAINER_HEIGHT;
     const widget = this.node.addComponent(Widget);

@@ -1,0 +1,154 @@
+{
+  "ver": "1.0.6",
+  "importer": "sprite-atlas",
+  "imported": true,
+  "uuid": "a045e758-316f-4a92-b85a-4173e144b1e1",
+  "files": [
+    ".json",
+    ".plist"
+  ],
+  "subMetas": {
+    "792f2": {
+      "importer": "sprite-frame",
+      "uuid": "a045e758-316f-4a92-b85a-4173e144b1e1@792f2",
+      "displayName": "",
+      "id": "792f2",
+      "name": "0010 - Tauren Paladin - Idle 1",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": 0,
+        "trimX": 1,
+        "trimY": 1,
+        "width": 32,
+        "height": 32,
+        "rawWidth": 32,
+        "rawHeight": 32,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "91b7cce0-4154-4ac4-afa4-23bfab14f00c@6c48a",
+        "atlasUuid": "a045e758-316f-4a92-b85a-4173e144b1e1"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "a2612": {
+      "importer": "sprite-frame",
+      "uuid": "a045e758-316f-4a92-b85a-4173e144b1e1@a2612",
+      "displayName": "",
+      "id": "a2612",
+      "name": "0011 - Tauren Paladin - Idle 2",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": 0,
+        "trimX": 35,
+        "trimY": 1,
+        "width": 32,
+        "height": 32,
+        "rawWidth": 32,
+        "rawHeight": 32,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "91b7cce0-4154-4ac4-afa4-23bfab14f00c@6c48a",
+        "atlasUuid": "a045e758-316f-4a92-b85a-4173e144b1e1"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "3019a": {
+      "importer": "sprite-frame",
+      "uuid": "a045e758-316f-4a92-b85a-4173e144b1e1@3019a",
+      "displayName": "",
+      "id": "3019a",
+      "name": "0012 - Tauren Paladin - Idle 3",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": 0,
+        "trimX": 69,
+        "trimY": 1,
+        "width": 32,
+        "height": 32,
+        "rawWidth": 32,
+        "rawHeight": 32,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "91b7cce0-4154-4ac4-afa4-23bfab14f00c@6c48a",
+        "atlasUuid": "a045e758-316f-4a92-b85a-4173e144b1e1"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "a5f27": {
+      "importer": "sprite-frame",
+      "uuid": "a045e758-316f-4a92-b85a-4173e144b1e1@a5f27",
+      "displayName": "",
+      "id": "a5f27",
+      "name": "0013 - Tauren Paladin - Idle 4",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": 0,
+        "trimX": 103,
+        "trimY": 1,
+        "width": 32,
+        "height": 32,
+        "rawWidth": 32,
+        "rawHeight": 32,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "91b7cce0-4154-4ac4-afa4-23bfab14f00c@6c48a",
+        "atlasUuid": "a045e758-316f-4a92-b85a-4173e144b1e1"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "atlasTextureName": "enemy2.png",
+    "format": 3,
+    "uuid": "a045e758-316f-4a92-b85a-4173e144b1e1",
+    "textureUuid": "91b7cce0-4154-4ac4-afa4-23bfab14f00c@6c48a"
+  }
+}

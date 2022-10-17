@@ -15,3 +15,12 @@ export const createUINode = (
   node.layer = 1 << Layers.nameToLayer("UI_2D");
   return node;
 };
+
+export function randomFromArray<T>(arr: Array<T>): T {
+  let i = Math.floor(Math.random() * arr.length);
+  return arr[i];
+}
+
+export function sleep(delay: number) {
+  return new Promise((resolve) => setTimeout(resolve, delay));
+}

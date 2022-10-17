@@ -100,4 +100,36 @@ export const CONFIG_ENTITY = new Map<ENUM_ENTITY, T_ENTITY>([
       name: ENUM_ENTITY.ENEMY1,
     },
   ],
+  [
+    ENUM_ENTITY.ENEMY2,
+    {
+      scale: new Vec3(1.5, 1.5, 0),
+      name: ENUM_ENTITY.ENEMY2,
+    },
+  ],
+  [
+    ENUM_ENTITY.ENEMY3,
+    {
+      scale: new Vec3(1.5, 1.5, 0),
+      name: ENUM_ENTITY.ENEMY3,
+    },
+  ],
+  [
+    ENUM_ENTITY.ENEMY4,
+    {
+      scale: new Vec3(1.5, 1.5, 0),
+      name: ENUM_ENTITY.ENEMY4,
+    },
+  ],
+  [
+    ENUM_ENTITY.ENEMY5,
+    {
+      scale: new Vec3(1.5, 1.5, 0),
+      name: ENUM_ENTITY.ENEMY5,
+    },
+  ],
 ]);
+
+export const CONFIG_WORLDMAP = {
+  speed: 4,
+};

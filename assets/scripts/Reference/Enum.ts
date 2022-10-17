@@ -21,6 +21,12 @@ export enum ENUM_PLAYER_STATE {
   ATTACK = "attack",
 }
 
+export enum ENUM_ENEMY_STATE {
+  IDLE = "idle",
+  ATTACK = "attack",
+  BEATTACKED = "beattacked",
+}
+
 export enum ENUM_BUTTON {
   CHARATOR,
   EQUIP,
@@ -30,11 +36,20 @@ export enum ENUM_BUTTON {
 }
 
 export enum ENUM_EVENT {
-  CHANGEMENU = "changeMenu",
+  TRIGGLGWORLDMAP = "triggle_worldmap",
+  CHANGEMENU = "change_menu",
   PLAYER_ATTACK = "player_attack",
 }
 
 export enum ENUM_ENTITY {
   PLAYER,
   ENEMY1,
+  ENEMY2,
+  ENEMY3,
+  ENEMY4,
+  ENEMY5,
+}
+
+export enum ENUM_NODE {
+  TIME = "time",
 }

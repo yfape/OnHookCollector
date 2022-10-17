@@ -1,0 +1,154 @@
+{
+  "ver": "1.0.6",
+  "importer": "sprite-atlas",
+  "imported": true,
+  "uuid": "7a5b85e1-b36a-4035-b5f0-a571e26ae418",
+  "files": [
+    ".json",
+    ".plist"
+  ],
+  "subMetas": {
+    "105f0": {
+      "importer": "sprite-frame",
+      "uuid": "7a5b85e1-b36a-4035-b5f0-a571e26ae418@105f0",
+      "displayName": "",
+      "id": "105f0",
+      "name": "0030 - Troll Hunter - Idle 1",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": 0,
+        "trimX": 1,
+        "trimY": 1,
+        "width": 32,
+        "height": 32,
+        "rawWidth": 32,
+        "rawHeight": 32,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "b767e20c-27ee-4ed5-998c-12bd30908925@6c48a",
+        "atlasUuid": "7a5b85e1-b36a-4035-b5f0-a571e26ae418"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "37de9": {
+      "importer": "sprite-frame",
+      "uuid": "7a5b85e1-b36a-4035-b5f0-a571e26ae418@37de9",
+      "displayName": "",
+      "id": "37de9",
+      "name": "0031 - Troll Hunter - Idle 2",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": 0,
+        "trimX": 35,
+        "trimY": 1,
+        "width": 32,
+        "height": 32,
+        "rawWidth": 32,
+        "rawHeight": 32,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "b767e20c-27ee-4ed5-998c-12bd30908925@6c48a",
+        "atlasUuid": "7a5b85e1-b36a-4035-b5f0-a571e26ae418"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "b24c2": {
+      "importer": "sprite-frame",
+      "uuid": "7a5b85e1-b36a-4035-b5f0-a571e26ae418@b24c2",
+      "displayName": "",
+      "id": "b24c2",
+      "name": "0032 - Troll Hunter - Idle 3",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": 0,
+        "trimX": 69,
+        "trimY": 1,
+        "width": 32,
+        "height": 32,
+        "rawWidth": 32,
+        "rawHeight": 32,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "b767e20c-27ee-4ed5-998c-12bd30908925@6c48a",
+        "atlasUuid": "7a5b85e1-b36a-4035-b5f0-a571e26ae418"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f24d2": {
+      "importer": "sprite-frame",
+      "uuid": "7a5b85e1-b36a-4035-b5f0-a571e26ae418@f24d2",
+      "displayName": "",
+      "id": "f24d2",
+      "name": "0033 - Troll Hunter - Idle 4",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": 0,
+        "trimX": 35,
+        "trimY": 1,
+        "width": 32,
+        "height": 32,
+        "rawWidth": 32,
+        "rawHeight": 32,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "b767e20c-27ee-4ed5-998c-12bd30908925@6c48a",
+        "atlasUuid": "7a5b85e1-b36a-4035-b5f0-a571e26ae418"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "atlasTextureName": "enemy4.png",
+    "format": 3,
+    "uuid": "7a5b85e1-b36a-4035-b5f0-a571e26ae418",
+    "textureUuid": "b767e20c-27ee-4ed5-998c-12bd30908925@6c48a"
+  }
+}

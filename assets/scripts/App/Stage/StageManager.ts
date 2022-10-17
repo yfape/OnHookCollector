@@ -1,21 +1,40 @@
-import { math, Node, Sprite, UITransform, Vec3, Widget } from "cc";
+import {
+  Component,
+  find,
+  math,
+  Node,
+  Sprite,
+  UITransform,
+  Vec3,
+  Widget,
+} from "cc";
+import { NodeClass } from "../../Base/NodeClass";
 import { SingleTon } from "../../Base/SingleTon";
 import { CONFIG_SYSTEM_STYLE } from "../../Reference/Config";
-import { ENUM_ENTITY, ENUM_RESOURCE_MAP } from "../../Reference/Enum";
+import {
+  ENUM_ENTITY,
+  ENUM_NODE,
+  ENUM_RESOURCE_MAP,
+} from "../../Reference/Enum";
 import { ResourceBus } from "../../Runtime/ResourceBus";
 import { EnemyManager } from "../Enemy/EnemyManager";
 import { PlayerManager } from "../Player/PlayerManager";
-import { createUINode } from "../Util";
+import { createUINode, randomFromArray } from "../Util";
+import { TimeManager } from "./TimeManager";
 
-export class StageManager extends SingleTon {
-  static get instance() {
-    return super.getInstance<StageManager>();
-  }
-
-  node: Node = null;
+export class StageManager extends NodeClass {
   map: ENUM_RESOURCE_MAP = ENUM_RESOURCE_MAP.MAP1;
   player: PlayerManager = null;
   enemys: Array<EnemyManager> = [];
+  timeManager: TimeManager = null;
+
+  enemy_hub: Array<ENUM_ENTITY> = [
+    ENUM_ENTITY.ENEMY1,
+    ENUM_ENTITY.ENEMY2,
+    ENUM_ENTITY.ENEMY3,
+    ENUM_ENTITY.ENEMY4,
+    ENUM_ENTITY.ENEMY5,
+  ];
 
   player_positions: Vec3 = new Vec3(-110, -25);
   entity_positions: Vec3[] = [
@@ -28,11 +47,10 @@ export class StageManager extends SingleTon {
     super();
     this.create();
     this.setPlayer();
-    this.begin();
+    this.setTime();
   }
 
   protected create() {
-    this.node = createUINode();
     const ui = this.node.getComponent(UITransform);
     ui.setContentSize(0, CONFIG_SYSTEM_STYLE.HEIGHT / 2);
     const sprite = this.node.addComponent(Sprite);
@@ -53,8 +71,9 @@ export class StageManager extends SingleTon {
     sprite.spriteFrame = ResourceBus.instance.map.get(this.map);
   }
 
-  protected begin() {
+  async begin() {
     this.setEnemy(3);
+    await this.timeManager.run(this.node);
   }
 
   protected setPlayer() {
@@ -65,13 +84,14 @@ export class StageManager extends SingleTon {
   protected setEnemy(num: number) {
     let i = 0;
     while (i < num) {
-      const enemy = new EnemyManager(
-        ENUM_ENTITY.ENEMY1,
-        this.entity_positions[i]
-      );
+      let enetity = randomFromArray(this.enemy_hub);
+      const enemy = new EnemyManager(enetity, this.entity_positions[i]);
       enemy.node.setParent(this.node);
       this.enemys.push(enemy);
       i++;
     }
+  }
+  protected setTime() {
+    this.timeManager = new TimeManager(4);
   }
 }

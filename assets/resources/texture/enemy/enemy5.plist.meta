@@ -1,0 +1,154 @@
+{
+  "ver": "1.0.6",
+  "importer": "sprite-atlas",
+  "imported": true,
+  "uuid": "1cff35a0-3677-41ac-affc-e487791280ee",
+  "files": [
+    ".json",
+    ".plist"
+  ],
+  "subMetas": {
+    "644cf": {
+      "importer": "sprite-frame",
+      "uuid": "1cff35a0-3677-41ac-affc-e487791280ee@644cf",
+      "displayName": "",
+      "id": "644cf",
+      "name": "0040 - Undead Rogue - Idle 1",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": 0,
+        "trimX": 1,
+        "trimY": 1,
+        "width": 32,
+        "height": 32,
+        "rawWidth": 32,
+        "rawHeight": 32,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "c18c1cd7-9fe6-4bda-8202-e935ef21d17b@6c48a",
+        "atlasUuid": "1cff35a0-3677-41ac-affc-e487791280ee"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "b23c1": {
+      "importer": "sprite-frame",
+      "uuid": "1cff35a0-3677-41ac-affc-e487791280ee@b23c1",
+      "displayName": "",
+      "id": "b23c1",
+      "name": "0041 - Undead Rogue - Idle 2",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": 0,
+        "trimX": 35,
+        "trimY": 1,
+        "width": 32,
+        "height": 32,
+        "rawWidth": 32,
+        "rawHeight": 32,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "c18c1cd7-9fe6-4bda-8202-e935ef21d17b@6c48a",
+        "atlasUuid": "1cff35a0-3677-41ac-affc-e487791280ee"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "95ffb": {
+      "importer": "sprite-frame",
+      "uuid": "1cff35a0-3677-41ac-affc-e487791280ee@95ffb",
+      "displayName": "",
+      "id": "95ffb",
+      "name": "0042 - Undead Rogue - Idle 3",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": 0,
+        "trimX": 69,
+        "trimY": 1,
+        "width": 32,
+        "height": 32,
+        "rawWidth": 32,
+        "rawHeight": 32,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "c18c1cd7-9fe6-4bda-8202-e935ef21d17b@6c48a",
+        "atlasUuid": "1cff35a0-3677-41ac-affc-e487791280ee"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f6276": {
+      "importer": "sprite-frame",
+      "uuid": "1cff35a0-3677-41ac-affc-e487791280ee@f6276",
+      "displayName": "",
+      "id": "f6276",
+      "name": "0043 - Undead Rogue - Idle 4",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": 0,
+        "trimX": 35,
+        "trimY": 1,
+        "width": 32,
+        "height": 32,
+        "rawWidth": 32,
+        "rawHeight": 32,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "c18c1cd7-9fe6-4bda-8202-e935ef21d17b@6c48a",
+        "atlasUuid": "1cff35a0-3677-41ac-affc-e487791280ee"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "atlasTextureName": "enemy5.png",
+    "format": 3,
+    "uuid": "1cff35a0-3677-41ac-affc-e487791280ee",
+    "textureUuid": "c18c1cd7-9fe6-4bda-8202-e935ef21d17b@6c48a"
+  }
+}
