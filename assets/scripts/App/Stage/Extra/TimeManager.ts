@@ -9,9 +9,9 @@ import {
   UITransform,
   Vec3,
 } from "cc";
-import { NodeClass } from "../../Base/NodeClass";
-import { ENUM_NODE } from "../../Reference/Enum";
-import { sleep } from "../Util";
+import { NodeClass } from "../../../Base/NodeClass";
+import { ENUM_NODE } from "../../../Reference/Enum";
+import { sleep } from "../../Util";
 
 interface I_Props {
   maxTime: number;
@@ -25,11 +25,13 @@ export class TimeManager extends NodeClass {
     position: new Vec3(0, 0, 0),
   };
   label: Label = null;
-  constructor(maxTime: number) {
+
+  constructor(parentNode: Node, maxTime: number) {
     super();
     this.node.name = ENUM_NODE.TIME;
     this.props.maxTime = maxTime;
     this.create();
+    this.node.setParent(parentNode);
   }
 
   protected create() {
@@ -68,14 +70,27 @@ export class TimeManager extends NodeClass {
       let vs = !v ? "Fight!" : v.toString();
       labelArr.push([i, vs]);
     }
+    labelArr.push([this.props.maxTime - 1 + 0.5, ""]);
 
     trackText.channel.curve.assignSorted(labelArr);
     clip.addTrack(trackText);
-    this.animationComponent.defaultClip = clip;
+    clip.name = "default";
+    this.animationComponent.clips.push(clip);
   }
 
-  async run(node: Node) {
-    this.node.setParent(node);
-    this.animationComponent.play();
+  async run() {
+    this.animationComponent.play("default");
+    let timer;
+    return new Promise((resolve) => {
+      timer = setInterval(() => {
+        const as = this.animationComponent.getState("default");
+        if (as.isMotionless) {
+          clearInterval(timer);
+          this.node.removeFromParent();
+          this.node.destroy();
+          resolve(true);
+        }
+      }, 100);
+    });
   }
 }

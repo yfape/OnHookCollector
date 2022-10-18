@@ -8,13 +8,15 @@ import {
   Vec3,
   Animation,
   Enum,
+  Widget,
+  Color,
 } from "cc";
 import { createUINode, sleep } from "../App/Util";
 import { T_ENTITY } from "../Reference/Config";
 import { ENUM_RESOURCE_EXTRA } from "../Reference/Enum";
 import { ResourceBus } from "../Runtime/ResourceBus";
 
-export class Entity extends Component {
+export abstract class Entity extends Component {
   node: Node = null;
   protected entityConfig: T_ENTITY = null;
   protected position: Vec3 = null;
@@ -29,15 +31,14 @@ export class Entity extends Component {
     super();
     this.position = position;
     this.entityConfig = entity;
-    this.setProperty();
+    this.create();
     this.createShadow();
   }
 
-  tokeRotation() {
-    this.node.setRotation(new Quat(0, 1, 0));
-  }
-
-  protected setProperty() {
+  /**
+   * 创建主节点
+   */
+  protected create() {
     this.node = createUINode();
     this.position && this.node.setPosition(this.position);
     this.entityConfig.scale && this.node.setScale(this.entityConfig.scale);
@@ -50,6 +51,9 @@ export class Entity extends Component {
     sprite.sizeMode = Sprite.SizeMode.TRIMMED;
   }
 
+  /**
+   * 创建阴影
+   */
   protected createShadow() {
     const config = this.entityConfig.shadow
       ? this.entityConfig.shadow
@@ -65,4 +69,31 @@ export class Entity extends Component {
       ENUM_RESOURCE_EXTRA.SHADOW
     );
   }
+
+  /**
+   * 角色转向
+   */
+  tokeRotation() {
+    this.node.setRotation(new Quat(0, 1, 0));
+  }
+
+  /**
+   * 显示伤害数值
+   */
+  protected showHurt() {}
+
+  /**
+   * 攻击
+   */
+  abstract attack(enetity: Entity);
+
+  /**
+   * 被攻击
+   */
+  abstract beAttacked(entity: Entity);
+
+  /**
+   * 死亡
+   */
+  abstract deal(): void;
 }

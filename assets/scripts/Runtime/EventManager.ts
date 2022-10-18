@@ -14,7 +14,7 @@ export class EventBus extends SingleTon {
   private eventDic: Map<string, Array<IItem>> = new Map();
 
   on(eventName: ENUM_EVENT, func: Function, ctx?: unknown) {
-    let _eventName = eventName.toString();
+    let _eventName = eventName;
     if (this.eventDic.has(_eventName)) {
       this.eventDic.get(_eventName).push({ func, ctx });
     } else {
@@ -23,7 +23,7 @@ export class EventBus extends SingleTon {
   }
 
   off(eventName: ENUM_EVENT, func: Function) {
-    let _eventName = eventName.toString();
+    let _eventName = eventName;
     if (this.eventDic.has(_eventName)) {
       const index = this.eventDic
         .get(_eventName)
@@ -33,7 +33,7 @@ export class EventBus extends SingleTon {
   }
 
   emit(eventName: ENUM_EVENT, ...params: unknown[]) {
-    let _eventName = eventName.toString();
+    let _eventName = eventName;
     if (this.eventDic.has(_eventName)) {
       this.eventDic.get(_eventName).forEach(({ func, ctx }) => {
         ctx ? func.apply(ctx, params) : func(...params);

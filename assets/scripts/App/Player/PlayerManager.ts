@@ -2,9 +2,6 @@ import {
   Animation,
   animation,
   AnimationClip,
-  Component,
-  Node,
-  Quat,
   Sprite,
   SpriteFrame,
   Vec3,
@@ -15,13 +12,13 @@ import {
   ENUM_ENTITY,
   ENUM_EVENT,
   ENUM_PLAYER_STATE,
-  ENUM_RESOURCE_PLAYER_STATE,
 } from "../../Reference/Enum";
 import { EventBus } from "../../Runtime/EventManager";
 import { ResourceBus } from "../../Runtime/ResourceBus";
+import { EnemyManager } from "../Enemy/EnemyManager";
+import { sleep, sleepAnimation } from "../Util";
 
 export class PlayerManager extends Entity {
-  animationComponent: Animation = null;
   constructor(position?: Vec3) {
     super(CONFIG_ENTITY.get(ENUM_ENTITY.PLAYER), position);
     this.animationComponent = this.node.addComponent(Animation);
@@ -59,7 +56,18 @@ export class PlayerManager extends Entity {
     });
   }
 
-  attack() {
+  async attack(enemy: EnemyManager) {
     this.animationComponent.play(ENUM_PLAYER_STATE.ATTACK);
+    await enemy.beAttacked(this);
+    return true;
+  }
+
+  async beAttacked(entity: EnemyManager) {
+    this.animationComponent.play(ENUM_PLAYER_STATE.BEATTACKED);
+    await sleepAnimation(this.animationComponent, ENUM_PLAYER_STATE.BEATTACKED);
+  }
+
+  deal(): void {
+    this.animationComponent.play(ENUM_PLAYER_STATE.DEAL);
   }
 }

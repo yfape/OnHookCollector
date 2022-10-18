@@ -2,45 +2,67 @@ import {
   Animation,
   animation,
   AnimationClip,
-  Component,
+  Color,
   Node,
-  Quat,
-  Size,
   Sprite,
   SpriteFrame,
+  UITransform,
   Vec3,
+  Widget,
 } from "cc";
 import { Entity } from "../../Base/Entity";
-import {
-  CONFIG_ENTITY,
-  CONFIG_PLAYER_STATE,
-  T_ENTITY,
-} from "../../Reference/Config";
+import { CONFIG_ENTITY, T_ENTITY } from "../../Reference/Config";
 import {
   ENUM_ENEMY_STATE,
   ENUM_ENTITY,
-  ENUM_EVENT,
-  ENUM_PLAYER_STATE,
-  ENUM_RESOURCE_PLAYER_STATE,
+  ENUM_RESOURCE_EXTRA,
 } from "../../Reference/Enum";
-import { EventBus } from "../../Runtime/EventManager";
 import { ResourceBus } from "../../Runtime/ResourceBus";
+import { PlayerManager } from "../Player/PlayerManager";
+import { createUINode, sleepAnimation } from "../Util";
 
 export class EnemyManager extends Entity {
-  entity: T_ENTITY;
-  position: Vec3;
+  isDeal: boolean = false;
+  protected entity_key: ENUM_ENTITY;
+  protected entity: T_ENTITY;
+  protected position: Vec3;
+  protected HPNode: Node;
+  private property = {
+    HP: 30,
+    ATK: 10,
+    AMR: 10,
+    AP: 1,
+    SKILL: [],
+  };
 
-  constructor(entity: ENUM_ENTITY, position?: Vec3) {
+  constructor(entity: ENUM_ENTITY, addi: number, position?: Vec3) {
     super(CONFIG_ENTITY.get(entity), position);
+    this.entity_key = entity;
     this.position = position;
+    this.isDeal = false;
     this.tokeRotation();
     this.entity = CONFIG_ENTITY.get(entity);
     this.loadClips();
+    this.animationComponent.on(
+      Animation.EventType.FINISHED,
+      (e) => {
+        console.log(e);
+      },
+      this
+    );
+    this.createHPBlock();
   }
 
   protected loadClips() {
+    this.loadIdleClip();
+    this.loadAttackClip();
+    this.loadBeAttackClip();
+    this.loadDealClip();
+  }
+
+  protected loadIdleClip() {
     const spriteFrames = ResourceBus.instance.enemy_state
-      .get(this.entity.name)
+      .get(this.entity_key)
       .getSpriteFrames();
     const track = new animation.ObjectTrack();
     track.path = new animation.TrackPath()
@@ -56,7 +78,6 @@ export class EnemyManager extends Entity {
     clip.wrapMode = AnimationClip.WrapMode.Loop;
     clip.addTrack(track);
     this.animationComponent.defaultClip = clip;
-    this.loadAttackClip();
     this.animationComponent.playOnLoad = true;
   }
 
@@ -100,11 +121,64 @@ export class EnemyManager extends Entity {
     this.animationComponent.clips.push(clip);
   }
 
-  attack() {
-    this.animationComponent.play(ENUM_ENEMY_STATE.ATTACK);
+  protected loadDealClip() {
+    const clip = new AnimationClip();
+    clip.name = ENUM_ENEMY_STATE.DEAL;
+    clip.duration = 0.3;
+    clip.wrapMode = AnimationClip.WrapMode.Normal;
+
+    const trackRo = new animation.VectorTrack();
+    trackRo.componentsCount = 3;
+    trackRo.path = new animation.TrackPath().toProperty("scale");
+    const [x1, y1, z1] = trackRo.channels();
+    let tempValue = this.entity.scale.y ? this.entity.scale.y : 1;
+    const frames: Array<[number, any]> = [
+      [0.1, { value: tempValue }],
+      [0.2, { value: tempValue / 2 }],
+      [0.3, { value: 0 }],
+    ];
+    y1.curve.assignSorted(frames);
+    clip.addTrack(trackRo);
+    this.animationComponent.clips.push(clip);
   }
 
-  beAttacked() {
+  protected createHPBlock() {
+    this.HPNode = createUINode();
+    this.node.addChild(this.HPNode);
+    const sprite = this.HPNode.addComponent(Sprite);
+    const ui = this.HPNode.getComponent(UITransform);
+    ui.setContentSize(15, 2);
+    sprite.color = new Color(255, 255, 255);
+    sprite.sizeMode = Sprite.SizeMode.CUSTOM;
+    sprite.spriteFrame = ResourceBus.instance.extra.get(
+      ENUM_RESOURCE_EXTRA.NULL
+    );
+    const widget = this.HPNode.addComponent(Widget);
+    widget.isAlignBottom = true;
+    widget.bottom = -3;
+  }
+
+  protected createHP() {
+    // const ui = this.HPNode.getComponent(UITransform)
+    // ui.setContentSize( , 2)
+  }
+
+  async attack(player: PlayerManager) {
+    this.animationComponent.play(ENUM_ENEMY_STATE.ATTACK);
+    await player.beAttacked(this);
+    return true;
+  }
+
+  async beAttacked(player: PlayerManager) {
     this.animationComponent.play(ENUM_ENEMY_STATE.BEATTACKED);
+    await sleepAnimation(this.animationComponent, ENUM_ENEMY_STATE.BEATTACKED);
+  }
+
+  async deal(): Promise<void> {
+    this.animationComponent.play(ENUM_ENEMY_STATE.DEAL);
+    await sleepAnimation(this.animationComponent, ENUM_ENEMY_STATE.DEAL);
+    this.node.removeFromParent();
+    this.node.destroy();
+    this.isDeal = true;
   }
 }

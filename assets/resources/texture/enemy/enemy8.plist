@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>2050 - Pale Lisk - Idle 1.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,-7}</string>
+                <key>spriteSize</key>
+                <string>{32,12}</string>
+                <key>spriteSourceSize</key>
+                <string>{32,32}</string>
+                <key>textureRect</key>
+                <string>{{1,1},{32,12}}</string>
+                <key>textureRotated</key>
+                <false/>
+            </dict>
+            <key>2051 - Pale Lisk - Idle 2.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,-7}</string>
+                <key>spriteSize</key>
+                <string>{32,12}</string>
+                <key>spriteSourceSize</key>
+                <string>{32,32}</string>
+                <key>textureRect</key>
+                <string>{{1,1},{32,12}}</string>
+                <key>textureRotated</key>
+                <false/>
+            </dict>
+            <key>2052 - Pale Lisk - Idle 3.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,-7}</string>
+                <key>spriteSize</key>
+                <string>{32,12}</string>
+                <key>spriteSourceSize</key>
+                <string>{32,32}</string>
+                <key>textureRect</key>
+                <string>{{35,1},{32,12}}</string>
+                <key>textureRotated</key>
+                <false/>
+            </dict>
+            <key>2053 - Pale Lisk - Idle 4.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,-7}</string>
+                <key>spriteSize</key>
+                <string>{32,12}</string>
+                <key>spriteSourceSize</key>
+                <string>{32,32}</string>
+                <key>textureRect</key>
+                <string>{{35,1},{32,12}}</string>
+                <key>textureRotated</key>
+                <false/>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>3</integer>
+            <key>pixelFormat</key>
+            <string>RGBA8888</string>
+            <key>premultiplyAlpha</key>
+            <false/>
+            <key>realTextureFileName</key>
+            <string>enemy8.png</string>
+            <key>size</key>
+            <string>{68,14}</string>
+            <key>smartupdate</key>
+            <string>$TexturePacker:SmartUpdate:bd44d4b0a430ff30a5623fd3e9e098bd:a869a9eb7e66cd0d763e751851c13336:277c6d87ea4bf685c3b8b1b17171af40$</string>
+            <key>textureFileName</key>
+            <string>enemy8.png</string>
+        </dict>
+    </dict>
+</plist>

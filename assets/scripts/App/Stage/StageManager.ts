@@ -1,97 +1,120 @@
-import {
-  Component,
-  find,
-  math,
-  Node,
-  Sprite,
-  UITransform,
-  Vec3,
-  Widget,
-} from "cc";
+import { Label, Node, Sprite, UITransform, Vec3, Widget } from "cc";
 import { NodeClass } from "../../Base/NodeClass";
-import { SingleTon } from "../../Base/SingleTon";
-import { CONFIG_SYSTEM_STYLE } from "../../Reference/Config";
-import {
-  ENUM_ENTITY,
-  ENUM_NODE,
-  ENUM_RESOURCE_MAP,
-} from "../../Reference/Enum";
+import { CONFIG_LEVEL, CONFIG_SYSTEM, TYPE_MAP } from "../../Reference/Config";
+import { ENUM_ENTITY, ENUM_LEVEL } from "../../Reference/Enum";
 import { ResourceBus } from "../../Runtime/ResourceBus";
 import { EnemyManager } from "../Enemy/EnemyManager";
 import { PlayerManager } from "../Player/PlayerManager";
-import { createUINode, randomFromArray } from "../Util";
-import { TimeManager } from "./TimeManager";
+import { createUINode, randomFromArray, sleep } from "../Util";
+import { CounterManager } from "./TopBanner/CounterManager";
+import { TimeManager } from "./Extra/TimeManager";
+
+const player_positions: Vec3 = new Vec3(-110, -25);
+const entity_positions: Vec3[] = [
+  new Vec3(80, -50),
+  new Vec3(110, 0),
+  new Vec3(110, -100),
+];
 
 export class StageManager extends NodeClass {
-  map: ENUM_RESOURCE_MAP = ENUM_RESOURCE_MAP.MAP1;
+  //实例组
   player: PlayerManager = null;
   enemys: Array<EnemyManager> = [];
   timeManager: TimeManager = null;
-
-  enemy_hub: Array<ENUM_ENTITY> = [
-    ENUM_ENTITY.ENEMY1,
-    ENUM_ENTITY.ENEMY2,
-    ENUM_ENTITY.ENEMY3,
-    ENUM_ENTITY.ENEMY4,
-    ENUM_ENTITY.ENEMY5,
-  ];
-
-  player_positions: Vec3 = new Vec3(-110, -25);
-  entity_positions: Vec3[] = [
-    new Vec3(80, -50),
-    new Vec3(110, 0),
-    new Vec3(110, -100),
-  ];
+  counterManager: CounterManager = null;
+  mapData: TYPE_MAP;
 
   constructor() {
     super();
     this.create();
-    this.setPlayer();
-    this.setTime();
   }
 
+  /**
+   * 创建主节点、玩家、计时器等
+   */
   protected create() {
     const ui = this.node.getComponent(UITransform);
-    ui.setContentSize(0, CONFIG_SYSTEM_STYLE.HEIGHT / 2);
+    ui.setContentSize(0, CONFIG_SYSTEM.window.height / 2);
     const sprite = this.node.addComponent(Sprite);
     sprite.sizeMode = Sprite.SizeMode.CUSTOM;
     this.node.addComponent(Widget);
-    this.setMap();
-    this.setWidget();
-  }
-
-  protected setWidget() {
     const widget = this.node.getComponent(Widget);
     widget.isAlignLeft = widget.isAlignRight = widget.isAlignTop = true;
     widget.top = widget.left = widget.right = 0;
-  }
-
-  protected setMap() {
-    const sprite = this.node.getComponent(Sprite);
-    sprite.spriteFrame = ResourceBus.instance.map.get(this.map);
-  }
-
-  async begin() {
-    this.setEnemy(3);
-    await this.timeManager.run(this.node);
-  }
-
-  protected setPlayer() {
-    this.player = new PlayerManager(this.player_positions);
+    this.player = new PlayerManager(player_positions);
     this.node.addChild(this.player.node);
+    this.timeManager = new TimeManager(this.node, 4);
+    this.counterManager = new CounterManager(this.node, 1);
   }
 
+  /**
+   * 设置敌人
+   */
   protected setEnemy(num: number) {
     let i = 0;
     while (i < num) {
-      let enetity = randomFromArray(this.enemy_hub);
-      const enemy = new EnemyManager(enetity, this.entity_positions[i]);
+      let enetity = randomFromArray(this.mapData.enemys);
+      const enemy = new EnemyManager(
+        enetity,
+        this.mapData.addi,
+        entity_positions[i]
+      );
       enemy.node.setParent(this.node);
       this.enemys.push(enemy);
       i++;
     }
   }
-  protected setTime() {
-    this.timeManager = new TimeManager(4);
+
+  /**
+   * 加载
+   * @param level
+   */
+  load(level: ENUM_LEVEL) {
+    this.mapData = CONFIG_LEVEL.get(level);
+    const sprite = this.node.getComponent(Sprite);
+    sprite.spriteFrame = ResourceBus.instance.map.get(this.mapData.map);
+  }
+
+  /**
+   * 开始
+   */
+  async begin() {
+    await this.enemys.forEach((item) => item.deal());
+    await this.timeManager.run();
+    while (true) {
+      this.setEnemy(3);
+      await sleep(500);
+      await this.onSection();
+      await sleep(500);
+    }
+  }
+
+  /**
+   * 单场
+   * @returns
+   */
+  async onSection() {
+    while (this.enemys.length > 0) {
+      await this.once();
+    }
+    return true;
+  }
+
+  /**
+   * 单回合
+   */
+  async once() {
+    let num = Math.floor(Math.random() * this.enemys.length);
+    await this.player.attack(this.enemys[num]);
+    await sleep(300);
+    for (let i = 0; i < this.enemys.length; i++) {
+      if (!this.enemys[i].isDeal) {
+        await this.enemys[i].attack(this.player);
+      } else {
+        this.enemys.splice(i, 1);
+      }
+      await sleep(300);
+    }
+    console.log("完成一回合");
   }
 }

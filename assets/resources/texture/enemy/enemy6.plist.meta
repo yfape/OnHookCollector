@@ -1,0 +1,154 @@
+{
+  "ver": "1.0.6",
+  "importer": "sprite-atlas",
+  "imported": true,
+  "uuid": "46566834-c216-4027-819e-f90ef511704d",
+  "files": [
+    ".json",
+    ".plist"
+  ],
+  "subMetas": {
+    "77d87": {
+      "importer": "sprite-frame",
+      "uuid": "46566834-c216-4027-819e-f90ef511704d@77d87",
+      "displayName": "",
+      "id": "77d87",
+      "name": "2070 - Felhound - Idle 1",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": -1,
+        "offsetY": -2,
+        "trimX": 1,
+        "trimY": 1,
+        "width": 30,
+        "height": 22,
+        "rawWidth": 32,
+        "rawHeight": 32,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "5c10a9a1-3a9f-4f3d-bbcf-82c369553d18@6c48a",
+        "atlasUuid": "46566834-c216-4027-819e-f90ef511704d"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "0df65": {
+      "importer": "sprite-frame",
+      "uuid": "46566834-c216-4027-819e-f90ef511704d@0df65",
+      "displayName": "",
+      "id": "0df65",
+      "name": "2071 - Felhound - Idle 2",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": -1,
+        "offsetY": -3,
+        "trimX": 1,
+        "trimY": 25,
+        "width": 30,
+        "height": 20,
+        "rawWidth": 32,
+        "rawHeight": 32,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "5c10a9a1-3a9f-4f3d-bbcf-82c369553d18@6c48a",
+        "atlasUuid": "46566834-c216-4027-819e-f90ef511704d"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "1da10": {
+      "importer": "sprite-frame",
+      "uuid": "46566834-c216-4027-819e-f90ef511704d@1da10",
+      "displayName": "",
+      "id": "1da10",
+      "name": "2072 - Felhound - Idle 3",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": -1,
+        "offsetY": -3,
+        "trimX": 1,
+        "trimY": 47,
+        "width": 30,
+        "height": 20,
+        "rawWidth": 32,
+        "rawHeight": 32,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "5c10a9a1-3a9f-4f3d-bbcf-82c369553d18@6c48a",
+        "atlasUuid": "46566834-c216-4027-819e-f90ef511704d"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "aec15": {
+      "importer": "sprite-frame",
+      "uuid": "46566834-c216-4027-819e-f90ef511704d@aec15",
+      "displayName": "",
+      "id": "aec15",
+      "name": "2073 - Felhound - Idle 4",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": -1,
+        "offsetY": -3,
+        "trimX": 1,
+        "trimY": 25,
+        "width": 30,
+        "height": 20,
+        "rawWidth": 32,
+        "rawHeight": 32,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "5c10a9a1-3a9f-4f3d-bbcf-82c369553d18@6c48a",
+        "atlasUuid": "46566834-c216-4027-819e-f90ef511704d"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "atlasTextureName": "enemy6.png",
+    "format": 3,
+    "uuid": "46566834-c216-4027-819e-f90ef511704d",
+    "textureUuid": "5c10a9a1-3a9f-4f3d-bbcf-82c369553d18@6c48a"
+  }
+}

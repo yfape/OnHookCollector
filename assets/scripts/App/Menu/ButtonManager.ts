@@ -49,8 +49,7 @@ export class ButtonManager extends NodeClass {
 
     const spriteNode = createUINode();
     spriteNode.on(Input.EventType.TOUCH_START, () => {
-      EventBus.instance.emit(ENUM_EVENT.CHANGEMENU, this.props.id);
-      EventBus.instance.emit(ENUM_EVENT.TRIGGLGWORLDMAP);
+      EventBus.instance.emit(ENUM_EVENT.MENU_CHANGE, this.props.id);
     });
     const sprite = spriteNode.addComponent(Sprite);
     sprite.sizeMode = Sprite.SizeMode.CUSTOM;

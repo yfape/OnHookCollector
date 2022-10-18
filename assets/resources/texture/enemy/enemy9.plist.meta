@@ -1,0 +1,154 @@
+{
+  "ver": "1.0.6",
+  "importer": "sprite-atlas",
+  "imported": true,
+  "uuid": "049ab1f5-030e-4e8d-9270-77cc3a70d2fe",
+  "files": [
+    ".json",
+    ".plist"
+  ],
+  "subMetas": {
+    "a5fae": {
+      "importer": "sprite-frame",
+      "uuid": "049ab1f5-030e-4e8d-9270-77cc3a70d2fe@a5fae",
+      "displayName": "",
+      "id": "a5fae",
+      "name": "2020 - Black Bear - Idle 1",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": -1,
+        "offsetY": -4,
+        "trimX": 1,
+        "trimY": 1,
+        "width": 28,
+        "height": 18,
+        "rawWidth": 32,
+        "rawHeight": 32,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "63fffac0-dee7-4691-bc83-4f61cb5a8163@6c48a",
+        "atlasUuid": "049ab1f5-030e-4e8d-9270-77cc3a70d2fe"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "853f6": {
+      "importer": "sprite-frame",
+      "uuid": "049ab1f5-030e-4e8d-9270-77cc3a70d2fe@853f6",
+      "displayName": "",
+      "id": "853f6",
+      "name": "2021 - Black Bear - Idle 2",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": -1,
+        "offsetY": -4,
+        "trimX": 1,
+        "trimY": 21,
+        "width": 28,
+        "height": 18,
+        "rawWidth": 32,
+        "rawHeight": 32,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "63fffac0-dee7-4691-bc83-4f61cb5a8163@6c48a",
+        "atlasUuid": "049ab1f5-030e-4e8d-9270-77cc3a70d2fe"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "07a35": {
+      "importer": "sprite-frame",
+      "uuid": "049ab1f5-030e-4e8d-9270-77cc3a70d2fe@07a35",
+      "displayName": "",
+      "id": "07a35",
+      "name": "2022 - Black Bear - Idle 3",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": -1,
+        "offsetY": -5,
+        "trimX": 1,
+        "trimY": 41,
+        "width": 28,
+        "height": 16,
+        "rawWidth": 32,
+        "rawHeight": 32,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "63fffac0-dee7-4691-bc83-4f61cb5a8163@6c48a",
+        "atlasUuid": "049ab1f5-030e-4e8d-9270-77cc3a70d2fe"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "6df17": {
+      "importer": "sprite-frame",
+      "uuid": "049ab1f5-030e-4e8d-9270-77cc3a70d2fe@6df17",
+      "displayName": "",
+      "id": "6df17",
+      "name": "2023 - Black Bear - Idle 4",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": -1,
+        "offsetY": -4,
+        "trimX": 1,
+        "trimY": 21,
+        "width": 28,
+        "height": 18,
+        "rawWidth": 32,
+        "rawHeight": 32,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "63fffac0-dee7-4691-bc83-4f61cb5a8163@6c48a",
+        "atlasUuid": "049ab1f5-030e-4e8d-9270-77cc3a70d2fe"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "atlasTextureName": "enemy9.png",
+    "format": 3,
+    "uuid": "049ab1f5-030e-4e8d-9270-77cc3a70d2fe",
+    "textureUuid": "63fffac0-dee7-4691-bc83-4f61cb5a8163@6c48a"
+  }
+}

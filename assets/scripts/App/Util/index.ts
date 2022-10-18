@@ -1,4 +1,4 @@
-import { Layers, Node, UITransform } from "cc";
+import { Layers, Node, UITransform, Animation } from "cc";
 
 type IAnchor = {
   x: number;
@@ -23,4 +23,21 @@ export function randomFromArray<T>(arr: Array<T>): T {
 
 export function sleep(delay: number) {
   return new Promise((resolve) => setTimeout(resolve, delay));
+}
+
+export function sleepAnimation(
+  animation: Animation,
+  attr: any,
+  num: number = 10
+) {
+  return new Promise<boolean>((resolve) => {
+    let timer;
+    timer = setInterval(() => {
+      let state = animation.getState(attr);
+      if (state.isMotionless) {
+        clearInterval(timer);
+        resolve(true);
+      }
+    }, num);
+  });
 }

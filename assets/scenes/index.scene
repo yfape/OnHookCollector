@@ -63,8 +63,8 @@
     "_prefab": null,
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": 199.99999999999997,
-      "y": 299.99999999999994,
+      "x": 200.00000000000003,
+      "y": 300,
       "z": 0
     },
     "_lrot": {
@@ -246,8 +246,8 @@
     },
     "_lscale": {
       "__type__": "cc.Vec3",
-      "x": 1,
-      "y": 1,
+      "x": 0,
+      "y": 0,
       "z": 1
     },
     "_layer": 33554432,
@@ -261,7 +261,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "build1",
+    "_name": "level_0",
     "_objFlags": 0,
     "_parent": {
       "__id__": 5
@@ -544,7 +544,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "build2",
+    "_name": "level_1",
     "_objFlags": 0,
     "_parent": {
       "__id__": 5
@@ -815,7 +815,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "build3",
+    "_name": "level_2",
     "_objFlags": 0,
     "_parent": {
       "__id__": 5
@@ -1086,7 +1086,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "build4",
+    "_name": "level_3",
     "_objFlags": 0,
     "_parent": {
       "__id__": 5
@@ -1357,7 +1357,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "build5",
+    "_name": "level_4",
     "_objFlags": 0,
     "_parent": {
       "__id__": 5
@@ -1628,7 +1628,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "build6",
+    "_name": "level_5",
     "_objFlags": 0,
     "_parent": {
       "__id__": 5
@@ -1899,7 +1899,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "build7",
+    "_name": "level_6",
     "_objFlags": 0,
     "_parent": {
       "__id__": 5
@@ -2170,7 +2170,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "build8",
+    "_name": "level_7",
     "_objFlags": 0,
     "_parent": {
       "__id__": 5
@@ -2441,7 +2441,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "build9",
+    "_name": "level_8",
     "_objFlags": 0,
     "_parent": {
       "__id__": 5
@@ -2712,7 +2712,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "build10",
+    "_name": "level_9",
     "_objFlags": 0,
     "_parent": {
       "__id__": 5
@@ -2983,7 +2983,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "build11",
+    "_name": "level_10",
     "_objFlags": 0,
     "_parent": {
       "__id__": 5
@@ -3254,7 +3254,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "build12",
+    "_name": "level_11",
     "_objFlags": 0,
     "_parent": {
       "__id__": 5
@@ -3633,7 +3633,7 @@
     },
     "_lscale": {
       "__type__": "cc.Vec3",
-      "x": 1,
+      "x": 1.2,
       "y": 1,
       "z": 1
     },
@@ -3657,7 +3657,7 @@
     "__prefab": null,
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 400,
+      "width": 333.33333333333337,
       "height": 300
     },
     "_anchorPoint": {
@@ -3834,10 +3834,10 @@
     "__prefab": null,
     "_alignFlags": 45,
     "_target": null,
-    "_left": -2.842170943040401e-14,
-    "_right": -2.842170943040401e-14,
-    "_top": -5.684341886080802e-14,
-    "_bottom": -5.684341886080802e-14,
+    "_left": 2.842170943040401e-14,
+    "_right": 2.842170943040401e-14,
+    "_top": 0,
+    "_bottom": 0,
     "_horizontalCenter": 0,
     "_verticalCenter": 0,
     "_isAbsLeft": true,

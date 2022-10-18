@@ -1,0 +1,154 @@
+{
+  "ver": "1.0.6",
+  "importer": "sprite-atlas",
+  "imported": true,
+  "uuid": "b3dc341b-bc32-4642-8c77-0104946decd3",
+  "files": [
+    ".json",
+    ".plist"
+  ],
+  "subMetas": {
+    "b32c2": {
+      "importer": "sprite-frame",
+      "uuid": "b3dc341b-bc32-4642-8c77-0104946decd3@b32c2",
+      "displayName": "",
+      "id": "b32c2",
+      "name": "2050 - Pale Lisk - Idle 1",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": -7,
+        "trimX": 1,
+        "trimY": 1,
+        "width": 32,
+        "height": 12,
+        "rawWidth": 32,
+        "rawHeight": 32,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "aabf4482-87bb-448c-bf01-f80b36f7ffae@6c48a",
+        "atlasUuid": "b3dc341b-bc32-4642-8c77-0104946decd3"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "6b409": {
+      "importer": "sprite-frame",
+      "uuid": "b3dc341b-bc32-4642-8c77-0104946decd3@6b409",
+      "displayName": "",
+      "id": "6b409",
+      "name": "2051 - Pale Lisk - Idle 2",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": -7,
+        "trimX": 1,
+        "trimY": 1,
+        "width": 32,
+        "height": 12,
+        "rawWidth": 32,
+        "rawHeight": 32,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "aabf4482-87bb-448c-bf01-f80b36f7ffae@6c48a",
+        "atlasUuid": "b3dc341b-bc32-4642-8c77-0104946decd3"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "bc894": {
+      "importer": "sprite-frame",
+      "uuid": "b3dc341b-bc32-4642-8c77-0104946decd3@bc894",
+      "displayName": "",
+      "id": "bc894",
+      "name": "2052 - Pale Lisk - Idle 3",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": -7,
+        "trimX": 35,
+        "trimY": 1,
+        "width": 32,
+        "height": 12,
+        "rawWidth": 32,
+        "rawHeight": 32,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "aabf4482-87bb-448c-bf01-f80b36f7ffae@6c48a",
+        "atlasUuid": "b3dc341b-bc32-4642-8c77-0104946decd3"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "ac7ea": {
+      "importer": "sprite-frame",
+      "uuid": "b3dc341b-bc32-4642-8c77-0104946decd3@ac7ea",
+      "displayName": "",
+      "id": "ac7ea",
+      "name": "2053 - Pale Lisk - Idle 4",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": -7,
+        "trimX": 35,
+        "trimY": 1,
+        "width": 32,
+        "height": 12,
+        "rawWidth": 32,
+        "rawHeight": 32,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "aabf4482-87bb-448c-bf01-f80b36f7ffae@6c48a",
+        "atlasUuid": "b3dc341b-bc32-4642-8c77-0104946decd3"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "atlasTextureName": "enemy8.png",
+    "format": 3,
+    "uuid": "b3dc341b-bc32-4642-8c77-0104946decd3",
+    "textureUuid": "aabf4482-87bb-448c-bf01-f80b36f7ffae@6c48a"
+  }
+}

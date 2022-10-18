@@ -1,0 +1,154 @@
+{
+  "ver": "1.0.6",
+  "importer": "sprite-atlas",
+  "imported": true,
+  "uuid": "9ec31d46-4542-4f95-904d-63dd8b7de243",
+  "files": [
+    ".json",
+    ".plist"
+  ],
+  "subMetas": {
+    "1b83e": {
+      "importer": "sprite-frame",
+      "uuid": "9ec31d46-4542-4f95-904d-63dd8b7de243@1b83e",
+      "displayName": "",
+      "id": "1b83e",
+      "name": "2060 - Succubus - Idle 1",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": -1,
+        "offsetY": -2,
+        "trimX": 1,
+        "trimY": 1,
+        "width": 20,
+        "height": 22,
+        "rawWidth": 32,
+        "rawHeight": 32,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "554ca15c-9e30-4b5d-8bea-cfe5f5b9cdd6@6c48a",
+        "atlasUuid": "9ec31d46-4542-4f95-904d-63dd8b7de243"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "de274": {
+      "importer": "sprite-frame",
+      "uuid": "9ec31d46-4542-4f95-904d-63dd8b7de243@de274",
+      "displayName": "",
+      "id": "de274",
+      "name": "2061 - Succubus - Idle 2",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": -1,
+        "offsetY": -3,
+        "trimX": 1,
+        "trimY": 25,
+        "width": 20,
+        "height": 20,
+        "rawWidth": 32,
+        "rawHeight": 32,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "554ca15c-9e30-4b5d-8bea-cfe5f5b9cdd6@6c48a",
+        "atlasUuid": "9ec31d46-4542-4f95-904d-63dd8b7de243"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "a4203": {
+      "importer": "sprite-frame",
+      "uuid": "9ec31d46-4542-4f95-904d-63dd8b7de243@a4203",
+      "displayName": "",
+      "id": "a4203",
+      "name": "2062 - Succubus - Idle 3",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": -1,
+        "offsetY": -3,
+        "trimX": 1,
+        "trimY": 47,
+        "width": 20,
+        "height": 20,
+        "rawWidth": 32,
+        "rawHeight": 32,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "554ca15c-9e30-4b5d-8bea-cfe5f5b9cdd6@6c48a",
+        "atlasUuid": "9ec31d46-4542-4f95-904d-63dd8b7de243"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "89bea": {
+      "importer": "sprite-frame",
+      "uuid": "9ec31d46-4542-4f95-904d-63dd8b7de243@89bea",
+      "displayName": "",
+      "id": "89bea",
+      "name": "2063 - Succubus - Idle 4",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": -1,
+        "offsetY": -3,
+        "trimX": 1,
+        "trimY": 25,
+        "width": 20,
+        "height": 20,
+        "rawWidth": 32,
+        "rawHeight": 32,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "554ca15c-9e30-4b5d-8bea-cfe5f5b9cdd6@6c48a",
+        "atlasUuid": "9ec31d46-4542-4f95-904d-63dd8b7de243"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "atlasTextureName": "enemy7.png",
+    "format": 3,
+    "uuid": "9ec31d46-4542-4f95-904d-63dd8b7de243",
+    "textureUuid": "554ca15c-9e30-4b5d-8bea-cfe5f5b9cdd6@6c48a"
+  }
+}

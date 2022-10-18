@@ -1,3 +1,5 @@
+import { Component } from "cc";
+
 export class SingleTon {
   private static _instance: any = null;
 
